@@ -395,8 +395,7 @@ impute_cols = [
 ]
 
 for c in impute_cols:
-    doubles_df = doubles_df.withColumn(<TODO>)
-
+    doubles_df = doubles_df.withColumn(c + "_na", when(col(c).isNull(), 1.0).otherwise(0.0))
 # COMMAND ----------
 
 # DBTITLE 1,describe
