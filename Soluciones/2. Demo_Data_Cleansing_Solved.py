@@ -219,7 +219,7 @@ display(fixed_price_df.select("price").describe())
 # COMMAND ----------
 
 # DBTITLE 1,Deleting null prices
-pos_prices_df = fixed_price_df.filter(col("price").isNotNull()).filter(col('price')> 0)
+pos_prices_df = fixed_price_df.filter(col("price").isNotNull()).filter(col('price')> 0).filter(col('price') < 250)
 
 # COMMAND ----------
 
