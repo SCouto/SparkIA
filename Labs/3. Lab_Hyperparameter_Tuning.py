@@ -227,4 +227,4 @@ pred_df = pipeline_model.transform(<TODO>)
 area_under_roc = evaluator.evaluate(<TODO>)
 print(f"Area under ROC is {area_under_roc:.2f}")
 
-#I got 0.77
+#I got 0.88
