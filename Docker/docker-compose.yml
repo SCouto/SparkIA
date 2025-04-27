@@ -1,0 +1,13 @@
+version: '3'
+services:
+  spark-jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    environment:
+      - SPARK_MODE=local
+      - SPARK_MASTER_URL=spark://localhost:7077
+    volumes:
+      - ./notebooks:/opt/notebooks
+    working_dir: /opt/notebooks
+
