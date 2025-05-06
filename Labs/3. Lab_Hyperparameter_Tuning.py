@@ -121,7 +121,7 @@ param_grid = (ParamGridBuilder()
 
 from pyspark.ml.evaluation import BinaryClassificationEvaluator 
 
-evaluator = BinaryClassificationEvaluator(labelCol=<TODO>, rawPredictionCol=<TODO>,metricName="areaUnderROC")
+evaluator = BinaryClassificationEvaluator(labelCol=<TODO>, metricName="areaUnderROC")
 
 
 # COMMAND ----------
