@@ -43,7 +43,8 @@
 # DBTITLE 1,Load Data
 from pyspark.sql.functions import split, col
 
-file_path = f"dbfs:/FileStore/input/employees/"
+file_path = f"/Volumes/workspace/eoi/datasets/employees/employees.csv"
+
 
 
 raw_df = spark.read.csv(file_path,
