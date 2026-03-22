@@ -1,4 +1,3 @@
-version: '3'
 services:
   spark-jupyter:
     build: .
@@ -7,7 +6,11 @@ services:
     environment:
       - SPARK_MODE=local
       - SPARK_MASTER_URL=spark://localhost:7077
+      - JUPYTER_TOKEN=spark
     volumes:
-      - ./notebooks:/opt/notebooks
-    working_dir: /opt/notebooks
+      - ../Demos:/home/jovyan/work/demos
+      - ../Labs:/home/jovyan/work/labs
+      - ../Soluciones:/home/jovyan/work/solutions
+      - ../Datasets:/home/jovyan/work/datasets
+    working_dir: /home/jovyan/work
 
