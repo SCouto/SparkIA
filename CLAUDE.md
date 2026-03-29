@@ -34,9 +34,8 @@ All files in `Demos/`, `Labs/`, and `Soluciones/` are Databricks notebooks (`.py
 - `# COMMAND ----------` to delimit cells
 - `# MAGIC %md` for markdown cells
 - `spark` and `dbutils` as pre-injected globals (no SparkSession creation needed)
-- Delta Lake paths under `dbfs:/FileStore/` or Volumes
 
-Data flows across notebooks sequentially (e.g., cleansed data from Demo 2 is consumed by Demo 3 onward). The Airbnb dataset cleaned in Demo 2 is stored at `dbfs:/FileStore/output/airbnb/clean_data` and reused by Demos 3–9.
+Data flows across notebooks sequentially (e.g., cleansed data from Demo 2 is consumed by Demo 3 onward). 
 
 ## Notebook progression
 
