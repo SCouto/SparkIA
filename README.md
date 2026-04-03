@@ -16,7 +16,7 @@ Repository containing Demos and Labs for Apache Spark and ML with Databricks.
 
 Notebooks are designed to run sequentially. **Demo 2 (Data Cleansing)** generates the cleaned Airbnb dataset that all subsequent notebooks (3–9) depend on.
 
-The output of **Demo 2 (Data Cleansing)** , and input for the following notebooks is already available in `Datasets/outpus/airbnb/` so you can jump straight to any later notebook.
+The output of **Demo 2 (Data Cleansing)** , and input for the following notebooks is already available in `Datasets/output/airbnb/` so you can jump straight to any later notebook.
 
 ## Running locally with Docker
 
